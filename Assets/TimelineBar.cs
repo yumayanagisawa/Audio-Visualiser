@@ -57,23 +57,23 @@ public class TimelineBar : MonoBehaviour
 
     void SetTimlineTime(Vector3 point)
     {
-        Instantiate(testObject, point, Quaternion.identity);
+        //Instantiate(testObject, point, Quaternion.identity);
         Debug.Log(point);
-        //if(point.x > timelineEndPos.position.x)
-        //{
-        //    point.x = 1;
-        //}
-        //else if(point.x < timelineStartPos.position.x)
-        //{
-        //    point.x = 0;
-        //}
+        if (point.x > timelineEndPos.position.x)
+        {
+            point.x = timelineEndPos.position.x;
+        }
+        else if (point.x < timelineStartPos.position.x)
+        {
+            point.x = timelineStartPos.position.x;
+        }
         Vector3 finalPoint;
         RaycastHit hit;
         //Vector3 testVector = new Vector3(point.x,point.z, mainCamera.gameObject.transform.position.z);
         if (Physics.Raycast(point, testObject.transform.forward, out hit, 50f))
         {
             finalPoint = hit.point;
-            Instantiate(testObject, finalPoint, Quaternion.identity);
+            //Instantiate(testObject, finalPoint, Quaternion.identity);
         }
         else
         {

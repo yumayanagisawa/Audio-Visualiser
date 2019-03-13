@@ -146,6 +146,8 @@ MonoBehaviour:
   timelineStartPos: {fileID: 1623264793}
   timelineEndPos: {fileID: 692791814}
   mainCamera: {fileID: 1683382164}
+  testObject: {fileID: 3517323708409806007, guid: 602e8ec447a0683458c04b1257fe4e97,
+    type: 3}
 --- !u!4 &270900139
 Transform:
   m_ObjectHideFlags: 0
@@ -154,15 +156,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270900137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.77, z: -8.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.127, z: 0.36}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.3}
   m_Children:
   - {fileID: 1623264793}
   - {fileID: 692791814}
   - {fileID: 1651666694}
   - {fileID: 1274998427}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1683382165}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692791813
 GameObject:
@@ -551,7 +553,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.08333397
+        value: 0.02
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -691,7 +693,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 270900139}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
