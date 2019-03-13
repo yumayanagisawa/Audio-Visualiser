@@ -19,7 +19,7 @@ public class TimelineManager : MonoBehaviour
 
     private AudioTrack audiTrack;
 
-
+    public bool playableGraphIsSet;
 
     private void Start()
     {
@@ -56,6 +56,7 @@ public class TimelineManager : MonoBehaviour
         //audiTrack.CreateClip(audioManager.songs[audioManager.selectedSongIndex]);
         //audiTrack.CreatePlayable(playableGraph, this.gameObject);
         playableGraph.Play();
+        playableGraphIsSet = true;
        // BindTimelineTracks();
         //playableDirector.Play();
     }
@@ -78,5 +79,6 @@ public class TimelineManager : MonoBehaviour
     private void OnDestroy()
     {
         playableGraph.Destroy();
+        playableGraphIsSet = false;
     }
 }
