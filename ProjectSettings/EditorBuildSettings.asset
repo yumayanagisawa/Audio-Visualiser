@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene1.unity
-    guid: 3bae4e0223bfccc4b93b0be79d2f914d
+    path: Assets/Samples/Volumetric/SXSW_Volumetric.unity
+    guid: 0867626940c3d594a9c20639a9280e58
   m_configObjects: {}
