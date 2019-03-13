@@ -14,6 +14,8 @@ public class FakeCustom : MonoBehaviour
     void Start()
     {
         GetComponent<Transform>().localScale = new Vector3(0, 0, 0);
+        isCanvasOn = false;
+        isOn = true;
     }
 
     // Update is called once per frame
