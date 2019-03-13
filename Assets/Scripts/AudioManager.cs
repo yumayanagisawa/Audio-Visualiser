@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource musicSource;
     public List<AudioClip> songs;
+    public int selectedSongIndex = 0;
     private int songIndex = 0;
 
     private string absolutePath = "./music";
@@ -25,6 +26,7 @@ public class AudioManager : MonoBehaviour
         {
             musicSource.Stop();
             musicSource.clip = songs[songIndex];
+            selectedSongIndex = songIndex;
             songIndex++;
             if(songIndex >= songs.Count)
             {
